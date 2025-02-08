@@ -26,41 +26,38 @@ function Projects() {
         );
     }
 
-    if (isLoading) {
-        return (
-            <section className="projects page-transition">
-                <h2 className="heading">My <span>Projects</span></h2>
-                <div className="loading">Loading...</div>
-            </section>
-        );
-    }
-
     return (
         <section className="projects page-transition">
             <h2 className="heading">My <span>Projects</span></h2>
             <div className="projects-container">
-                {repos.map((repo) => (
-                    <div className="project-box" key={repo.id}>
-                        <h3>{repo.name}</h3>
-                        <p>{repo.description || 'No description available'}</p>
-                        <div className="project-info">
-                            <span>
-                                <FaStar /> {repo.stargazers_count}
-                            </span>
-                            <span>
-                                <FaCodeBranch /> {repo.forks_count}
-                            </span>
-                            {repo.language && (
-                                <span className="language">
-                                    <FaCircle /> {repo.language}
+                {isLoading ? (
+                    <div className="loading">Loading...</div>
+                ) : (
+                    repos.map((repo, index) => (
+                        <div className="project-box stagger-animation"
+                            key={repo.id}
+                            style={{ '--index': index }}>
+                            <h3>{repo.name}</h3>
+                            <p>{repo.description || 'No description available'}</p>
+                            <div className="project-info">
+                                <span>
+                                    <FaStar /> {repo.stargazers_count}
                                 </span>
-                            )}
+                                <span>
+                                    <FaCodeBranch /> {repo.forks_count}
+                                </span>
+                                {repo.language && (
+                                    <span className="language">
+                                        <FaCircle /> {repo.language}
+                                    </span>
+                                )}
+                            </div>
+                            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="btn">
+                                View Project
+                            </a>
                         </div>
-                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="btn">
-                            View Project
-                        </a>
-                    </div>
-                ))}
+                    ))
+                )}
             </div>
         </section>
     );

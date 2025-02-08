@@ -279,6 +279,7 @@ header {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 3rem;
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 .projects .heading span {
@@ -290,6 +291,8 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 20px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .project-box {
@@ -360,6 +363,8 @@ header {
   font-size: 1.5rem;
   color: #00abf0;
   margin-top: 2rem;
+  animation: fadeIn 0.6s ease-out forwards;
+  width: 100%;
 }
 
 /* Responsive Design */
@@ -477,5 +482,24 @@ html {
 
   100% {
     opacity: 1;
+  }
+}
+
+.stagger-animation {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInProject 0.5s ease-out forwards;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+@keyframes slideInProject {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
