@@ -19,7 +19,7 @@ function Projects() {
 
     if (error) {
         return (
-            <section className="projects">
+            <section className="projects page-transition">
                 <h2 className="heading">My <span>Projects</span></h2>
                 <div className="loading">Error: {error.message}</div>
             </section>
@@ -28,7 +28,7 @@ function Projects() {
 
     if (isLoading) {
         return (
-            <section className="projects">
+            <section className="projects page-transition">
                 <h2 className="heading">My <span>Projects</span></h2>
                 <div className="loading">Loading...</div>
             </section>
@@ -36,7 +36,7 @@ function Projects() {
     }
 
     return (
-        <section className="projects">
+        <section className="projects page-transition">
             <h2 className="heading">My <span>Projects</span></h2>
             <div className="projects-container">
                 {repos.map((repo) => (

@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 function HomePage() {
     return (
-        <section className="home">
+        <section className="home page-transition">
             <div className="home-content">
                 <h1>Hi, I'm Atabey AYKUT</h1>
                 <h3>Frontend Developer</h3>

@@ -2,7 +2,9 @@ import React from 'react'
 
 function About() {
     return (
-        <div>About</div>
+        <div className="about page-transition">
+            About
+        </div>
     )
 }
 
