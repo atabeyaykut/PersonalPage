@@ -38,14 +38,7 @@ function Projects() {
                             key={repo.id}
                             style={{ '--index': index }}>
                             <h3>{repo.name}</h3>
-                            <p>{repo.description || 'No description available'}</p>
                             <div className="project-info">
-                                <span>
-                                    <FaStar /> {repo.stargazers_count}
-                                </span>
-                                <span>
-                                    <FaCodeBranch /> {repo.forks_count}
-                                </span>
                                 {repo.language && (
                                     <span className="language">
                                         <FaCircle /> {repo.language}

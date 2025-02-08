@@ -268,7 +268,6 @@ header {
   }
 }
 
-/* Projects Section Styles */
 .projects {
   min-height: 100vh;
   padding: 8rem 10% 2rem;
@@ -337,7 +336,7 @@ header {
 }
 
 .project-info .language {
-  color: #00abf0;
+  color: #00acf0bb;
 }
 
 .project-box .btn {
@@ -367,7 +366,6 @@ header {
   width: 100%;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .projects {
     padding: 6rem 5% 2rem;
@@ -382,7 +380,6 @@ header {
   }
 }
 
-/* Page Transition Animations */
 .app-container {
   position: relative;
   background: #011826;
@@ -435,7 +432,6 @@ header {
   }
 }
 
-/* Sayfa içeriği için stagger efekti */
 .page-transition>* {
   animation: contentFade 0.4s ease-out forwards;
   opacity: 0;
@@ -469,12 +465,10 @@ header {
   }
 }
 
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Sayfa yüklenirken initial animasyon */
 @keyframes initialLoad {
   0% {
     opacity: 0;
