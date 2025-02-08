@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 function HomePage() {
     return (
         <section className="home">
-            <div className="hom-content">
+            <div className="home-content">
                 <h1>Hi, I'm Atabey AYKUT</h1>
                 <h3>Frontend Developer</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae est, quisquam, nobis quos fuga nemo sint voluptate vel, voluptas quam voluptates. Quaerat, nostrum! Eos asperiores sunt atque.</p>
