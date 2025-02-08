@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { FaStar, FaCodeBranch, FaCircle } from 'react-icons/fa';
 
 function Projects() {
@@ -8,8 +9,7 @@ function Projects() {
     useEffect(() => {
         const fetchRepos = async () => {
             try {
-                const response = await fetch('https://api.github.com/users/atabeyaykut/repos');
-                const data = await response.json();
+                const { data } = await axios.get('https://api.github.com/users/atabeyaykut/repos');
                 const sortedRepos = data
                     .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
                     .slice(0, 10);
