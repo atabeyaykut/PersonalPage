@@ -7,8 +7,10 @@ function HomePage() {
         <main className="home page-transition">
             <article className="home-content">
                 <h1>Hi, I'm Atabey AYKUT</h1>
-                <h2 className="h3">Frontend Developer</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae est, quisquam, nobis quos fuga nemo sint voluptate vel, voluptas quam voluptates. Quaerat, nostrum! Eos asperiores sunt atque.</p>
+                <h2>Frontend Developer</h2>
+                <p>I am a Physics Engineering graduate with a passion for web development. Skilled in HTML, CSS, JavaScript, React, and Java, I specialize in building component-based structures, state management, and DOM manipulation.
+
+                    With experience in front-end development and software engineering, I strive to create user-friendly, high-performance, and scalable solutions. I’m eager to contribute as a Front-End Developer with a problem-solving mindset and a strong team spirit. Looking forward to collaborating!</p>
                 <nav className="btn-box">
                     <a href="#contact" aria-label="Hire Me">Hire Me</a>
                     <a href="#contact" aria-label="Let's Talk">Lets Talk</a>

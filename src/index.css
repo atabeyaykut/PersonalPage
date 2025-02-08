@@ -92,14 +92,14 @@ header {
   animation-delay: 1s;
 }
 
-.home-content h3 {
+.home-content h2 {
   position: relative;
   font-size: 32px;
   font-weight: 700;
   color: #00abf0;
 }
 
-.home-content h3::before {
+.home-content h2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -314,7 +314,7 @@ header {
 
 .project-box h3 {
   font-size: 1.5rem;
-  color: #00abf0;
+  color: #00b7ff;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
