@@ -12,7 +12,7 @@ body {
   color: #ededed;
 }
 
-.header {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -264,5 +264,114 @@ body {
 @keyframes showRight {
   100% {
     width: 0;
+  }
+}
+
+/* Projects Section Styles */
+.projects {
+  min-height: 100vh;
+  padding: 8rem 10% 2rem;
+  background: #011826;
+}
+
+.projects .heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.projects .heading span {
+  color: #00abf0;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 20px 0;
+}
+
+.project-box {
+  position: relative;
+  background: #0d2432;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.2rem solid #00abf0;
+  transition: .5s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 171, 240, 0.3);
+}
+
+.project-box h3 {
+  font-size: 1.5rem;
+  color: #00abf0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.project-box p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #ededed;
+}
+
+.project-info {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ededed;
+}
+
+.project-info span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.project-info .language {
+  color: #00abf0;
+}
+
+.project-box .btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #00abf0;
+  border: 0.2rem solid #00abf0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #001c2a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .5s ease;
+}
+
+.project-box .btn:hover {
+  background: transparent;
+  color: #00abf0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #00abf0;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects {
+    padding: 6rem 5% 2rem;
+  }
+
+  .projects .heading {
+    font-size: 3rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }
