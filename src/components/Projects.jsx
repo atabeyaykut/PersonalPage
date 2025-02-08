@@ -1,30 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { FaStar, FaCodeBranch, FaCircle } from 'react-icons/fa';
 
+const fetchGithubRepos = async () => {
+    const { data } = await axios.get('https://api.github.com/users/atabeyaykut/repos');
+    return data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+        .slice(0, 10);
+};
+
 function Projects() {
-    const [repos, setRepos] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const { data: repos, isLoading, error } = useQuery({
+        queryKey: ['repos'],
+        queryFn: fetchGithubRepos,
+        staleTime: 5 * 60 * 1000,
+        cacheTime: 30 * 60 * 1000,
+    });
 
-    useEffect(() => {
-        const fetchRepos = async () => {
-            try {
-                const { data } = await axios.get('https://api.github.com/users/atabeyaykut/repos');
-                const sortedRepos = data
-                    .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-                    .slice(0, 10);
-                setRepos(sortedRepos);
-                setLoading(false);
-            } catch (error) {
-                console.error('Error fetching repos:', error);
-                setLoading(false);
-            }
-        };
+    if (error) {
+        return (
+            <section className="projects">
+                <h2 className="heading">My <span>Projects</span></h2>
+                <div className="loading">Error: {error.message}</div>
+            </section>
+        );
+    }
 
-        fetchRepos();
-    }, []);
-
-    if (loading) {
+    if (isLoading) {
         return (
             <section className="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
