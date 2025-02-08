@@ -5,7 +5,7 @@ import { FaCircle } from 'react-icons/fa';
 
 const fetchStarredRepos = async () => {
     const { data } = await axios.get('https://api.github.com/users/atabeyaykut/starred');
-    return data.slice(0, 6);
+    return data.slice(0, 8);
 };
 
 function Projects() {
@@ -37,7 +37,6 @@ function Projects() {
                             key={repo.id}
                             style={{ '--index': index }}>
                             <h3>{repo.name}</h3>
-                            <p>{repo.description || 'No description available'}</p>
                             <div className="project-info">
                                 {repo.language && (
                                     <span className="language">
