@@ -5,7 +5,7 @@ import { FaCircle } from 'react-icons/fa';
 
 const fetchStarredRepos = async () => {
     const { data } = await axios.get('https://api.github.com/users/atabeyaykut/starred');
-    return data.slice(0, 8);
+    return data.slice(0,8);
 };
 
 function Projects() {
