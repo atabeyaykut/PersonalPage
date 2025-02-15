@@ -131,7 +131,7 @@ function Contact() {
                             disabled={mutation.isPending}
                             className="mt-6 w-full cursor-pointer bg-gradient-to-r from-gray-800 to-gray-900 text-white py-4 px-6 rounded-2xl font-semibold text-lg hover:from-gray-700 hover:to-gray-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            {mutation.isPending ? 'Gönderiliyor...' : 'Gönder'}
+                            {mutation.isPending ? 'Sending...' : 'Apply'}
                         </button>
                     </form>
                 </div>
