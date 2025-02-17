@@ -49,7 +49,7 @@ function About() {
                             Currently, I serve as a Frontend Developer at QuantumCode Apps, where I build and maintain responsive, high-performance web applications. I work closely with UI/UX designers to craft user-centric and visually engaging interfaces.
                         </p>
                         <p className="text-gray-300 leading-relaxed">
-                            My journey also includes an intensive training as a Frontend Development Trainee at Work�ntech Inc., completing over 480 hours of practical learning in technologies like HTML, CSS, JavaScript, React, and Redux.
+                            My journey also includes an intensive training as a Frontend Development Trainee at Workintech Inc., completing over 480 hours of practical learning in technologies like HTML, CSS, JavaScript, React, and Redux.
                         </p>
                     </motion.div>
 
