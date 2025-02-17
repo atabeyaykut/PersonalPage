@@ -36,20 +36,20 @@ function About() {
                     variants={itemVariants}
                     className="text-5xl font-bold text-center mb-12"
                 >
-                    About <span className="text-primary">Me</span>
+                    About <span className="text-primary">Atabey AYKUT</span>
                 </motion.h2>
 
                 <div className="grid md:grid-cols-2 gap-12">
                     <motion.div variants={itemVariants} className="space-y-6">
                         <h3 className="text-2xl font-semibold text-primary">Professional Journey</h3>
                         <p className="text-gray-300 leading-relaxed">
-                            As a Physics Engineering graduate turned Frontend Developer, I bring a unique analytical perspective to web development. My engineering background has equipped me with strong problem-solving skills and attention to detail, which I now apply to creating exceptional user experiences.
+                            I am a Physics Engineering graduate from Hacettepe University who transformed my passion for technology into a career in web development. My academic background instilled a strong analytical mindset and keen attention to detail.
                         </p>
                         <p className="text-gray-300 leading-relaxed">
-                            With a deep passion for web technologies, I specialize in building modern, responsive web applications. My expertise spans across React.js, Next.js, and various frontend frameworks, allowing me to create seamless and engaging user interfaces.
+                            Currently, I serve as a Frontend Developer at QuantumCode Apps, where I build and maintain responsive, high-performance web applications. I work closely with UI/UX designers to craft user-centric and visually engaging interfaces.
                         </p>
                         <p className="text-gray-300 leading-relaxed">
-                            I believe in continuous learning and staying up-to-date with the latest web development trends and best practices. This commitment helps me deliver cutting-edge solutions that meet both user needs and business objectives.
+                            My journey also includes an intensive training as a Frontend Development Trainee at Work�ntech Inc., completing over 480 hours of practical learning in technologies like HTML, CSS, JavaScript, React, and Redux.
                         </p>
                     </motion.div>
 
@@ -62,9 +62,9 @@ function About() {
                                     <h4 className="text-lg font-semibold">Frontend Development</h4>
                                 </div>
                                 <ul className="text-gray-300 space-y-2">
-                                    <li>• React.js & Next.js</li>
-                                    <li>• JavaScript/TypeScript</li>
-                                    <li>• HTML5 & CSS3</li>
+                                    <li>• React.js</li>
+                                    <li>• JavaScript (ES6+)</li>
+                                    <li>• HTML5 &amp; CSS3</li>
                                     <li>• Tailwind CSS</li>
                                 </ul>
                             </div>
@@ -74,18 +74,18 @@ function About() {
                                     <h4 className="text-lg font-semibold">Backend Knowledge</h4>
                                 </div>
                                 <ul className="text-gray-300 space-y-2">
-                                    <li>• Node.js</li>
-                                    <li>• RESTful APIs</li>
+                                    <li>• Java &amp; SpringBoot</li>
+                                    <li>• REST APIs</li>
                                     <li>• Database Management</li>
-                                    <li>• Server Integration</li>
+                                    <li>• MySQL, PostgreSQL, MongoDB</li>
                                 </ul>
                             </div>
                         </div>
                     </motion.div>
 
-                    <motion.div variants={itemVariants} className="md:col-span-2 space-y-6">
-                        <h3 className="text-2xl font-semibold text-primary">Tools & Technologies</h3>
-                        <div className="bg-[#011f2e] p-4 rounded-lg">
+                    <motion.div variants={itemVariants} className="md:col-span-2 space-y-6 ">
+                        <h3 className="text-2xl font-semibold text-primary">Tools &amp; Technologies</h3>
+                        <div className="bg-[#011f2e] px-8 p-4 rounded-lg">
                             <div className="flex items-center gap-2 mb-4">
                                 <FaTools className="text-primary text-xl" />
                                 <h4 className="text-lg font-semibold">Development Tools</h4>
@@ -102,14 +102,14 @@ function About() {
                                     <h5 className="font-semibold mb-2">Design</h5>
                                     <ul className="space-y-1">
                                         <li>• Figma</li>
-                                        <li>• Adobe XD</li>
                                     </ul>
                                 </div>
                                 <div className="text-gray-300">
                                     <h5 className="font-semibold mb-2">Testing</h5>
                                     <ul className="space-y-1">
                                         <li>• Jest</li>
-                                        <li>• React Testing Library</li>
+                                        <li>• Cypress</li>
+                                        <li>• Selenium</li>
                                     </ul>
                                 </div>
                                 <div className="text-gray-300">
@@ -117,6 +117,8 @@ function About() {
                                     <ul className="space-y-1">
                                         <li>• VS Code</li>
                                         <li>• npm/yarn</li>
+                                        <li>• Postman</li>
+                                        <li>• Vercel, Vite</li>
                                     </ul>
                                 </div>
                             </div>
@@ -131,22 +133,22 @@ function About() {
                             variants={itemVariants}
                             className="bg-[#011f2d] p-6 rounded-lg"
                         >
-                            <h4 className="text-xl font-medium mb-2">Problem Solving</h4>
-                            <p className="text-gray-300">Analytical thinking and creative solutions to complex challenges</p>
+                            <h4 className="text-xl font-medium mb-2">Analytical Problem Solving</h4>
+                            <p className="text-gray-300">Leveraging my engineering background to develop innovative, efficient solutions.</p>
                         </motion.li>
                         <motion.li
                             variants={itemVariants}
                             className="bg-[#011f2d] p-6 rounded-lg"
                         >
-                            <h4 className="text-xl font-medium mb-2">Team Collaboration</h4>
-                            <p className="text-gray-300">Strong communication and adaptability in team environments</p>
+                            <h4 className="text-xl font-medium mb-2">Effective Team Collaboration</h4>
+                            <p className="text-gray-300">Strong communication and teamwork skills that drive successful project outcomes.</p>
                         </motion.li>
                         <motion.li
                             variants={itemVariants}
                             className="bg-[#011f2d] p-6 rounded-lg"
                         >
-                            <h4 className="text-xl font-medium mb-2">Continuous Learning</h4>
-                            <p className="text-gray-300">Always eager to learn new technologies and improve skills</p>
+                            <h4 className="text-xl font-medium mb-2">Commitment to Continuous Learning</h4>
+                            <p className="text-gray-300">Dedicated to mastering new technologies and continuously improving my skill set.</p>
                         </motion.li>
                     </ul>
                 </motion.div>
