@@ -36,7 +36,7 @@ function About() {
                     variants={itemVariants}
                     className="text-5xl font-bold text-center mb-12"
                 >
-                    About <span className="text-primary">Atabey AYKUT</span>
+                    About <span className="text-[#00abf0]">Atabey AYKUT</span>
                 </motion.h2>
 
                 <div className="grid md:grid-cols-2 gap-12">
