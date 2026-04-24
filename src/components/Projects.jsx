@@ -19,7 +19,7 @@ function Projects() {
     if (error) {
         return (
             <section className="projects page-transition">
-                <h2 className="heading">My <span>Projects</span></h2>
+                <h2 className="heading">Featured <span>Projects</span></h2>
                 <div className="loading">Error: {error.message}</div>
             </section>
         );
@@ -27,7 +27,7 @@ function Projects() {
 
     return (
         <section className="projects page-transition">
-            <h2 className="heading">My <span>Projects</span></h2>
+            <h2 className="heading">Featured <span>Projects</span></h2>
             <div className="projects-container">
                 {isLoading ? (
                     <div className="loading">Loading...</div>

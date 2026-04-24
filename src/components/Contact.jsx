@@ -54,7 +54,7 @@ function Contact() {
             <div className="max-w-300 h-180 pt-8 w-full flex justify-center align-center items-center backdrop-blur-lg bg-black/30 p-12 rounded-3xl border border-gray-800 shadow-2xl hover:border-gray-700 transition-all duration-500">
                 <div className="max-w-2xl min-w-md mx-auto">
                     <h2 className="text-5xl font-bold text-center mb-5 bg-gradient-to-r from-gray-200 to-gray-400 text-transparent bg-clip-text">
-                        Get Contact With Me
+                        Let's Build Something Reliable
                     </h2>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2">

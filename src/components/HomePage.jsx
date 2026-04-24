@@ -37,18 +37,17 @@ function HomePage() {
                 </motion.h1>
                 
                 <motion.h2 variants={itemVariants}>
-                    Frontend Developer
+                    Backend Developer
                 </motion.h2>
                 
                 <motion.p variants={itemVariants}>
-                    I am a Physics Engineering graduate with a passion for web development. 
-                    Skilled in HTML, CSS, JavaScript, React, and Java, I specialize in building 
-                    component-based structures, state management, and DOM manipulation.
+                    I build backend systems focused on reliability, scalability, and real-world
+                    use cases. My main stack includes Node.js, REST API design, PostgreSQL, and SQLite,
+                    with special focus on offline-first architecture and system performance.
                     <br /><br />
-                    With experience in front-end development and software engineering, I strive 
-                    to create user-friendly, high-performance, and scalable solutions. I'm eager 
-                    to contribute as a Front-End Developer with a problem-solving mindset and a 
-                    strong team spirit. Looking forward to collaborating!
+                    I enjoy connecting software with physical devices such as QR readers and turnstiles,
+                    where stable backend flow and robust data handling directly affect real operations.
+                    I aim to deliver production-ready systems with clear architecture and strong ownership.
                 </motion.p>
                 
                 <motion.nav 
@@ -56,14 +55,14 @@ function HomePage() {
                     className="btn-box"
                 >
                     <a 
-                        href="#contact" 
+                        href="/contact" 
                         aria-label="Hire Me"
                         className="hover:bg-[#00abf0]/20 transition-colors duration-300"
                     >
                         Hire Me
                     </a>
                     <a 
-                        href="#contact" 
+                        href="/contact" 
                         aria-label="Let's Talk"
                         className="hover:bg-[#00abf0]/20 transition-colors duration-300"
                     >
